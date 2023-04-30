@@ -99,3 +99,28 @@ Detener los servicios de MongoDB
 nest g mo common
 
 nest g pi common/pipes/parseMongoId --no-spec
+
+# Creando un seed
+nest g res seed --no-spec
+
+## Nota de actualización - Axios
+En la siguiente clase, instalamos el paquete axios para realizar las peticiones HTTP.
+
+En la última versión del mismo, está dando inconvenientes con NestJS (cannot read properties of undefined).
+
+Pueden ver la issue sin resolver a día de hoy: https://github.com/axios/axios/issues/5100.
+
+
+Por lo que a la hora de instalar axios, recomendamos instalen la versión 0.27.2 hasta que liberen una versión superior con el inconveniente solventado.
+
+Pueden usar el comando 
+```
+yarn add axios@0.27.2 
+```
+```
+npm install axios@0.27.2.
+```
+
+instlar axios
+
+yarn add axios
