@@ -75,6 +75,22 @@ npm i -g @nestjs/cli
 ```
 docker-compose up -d
 ```
+
+5.-Clonar el archivo ```__.env.template__ ``` y renombrar la copia a ```__.env__```
+
+6.-Llenar las variables del entorno definidas en el 
+```
+.env
+```
+7.-Ejecutar la aplicacion en dev:
+```
+yarn start:dev
+```
+8.-Reconstruir la base de datos con la semilla
+
+```
+http://localhost:3000/api/v2/seed
+```
 ## Srack usado
 * MogoDB
 * Nest
@@ -124,3 +140,42 @@ npm install axios@0.27.2.
 instlar axios
 
 yarn add axios
+
+# Antes de hacer algun cambio
+git commit  -m "Antes de innsertar por lote"
+# Regresar al ultimo commmit
+git checkout -- .
+
+## Cambiar ... d a sin d
+los archivos para que corra
+
+# crear root
+<!-- para correr debemos levantar otra vez-->
+yarn add @nestjs/config
+
+instalar
+```
+npm i joi
+yarn add joi
+```
+
+##  MONGO DB  and render
+Cuenta usada
+juan.***cr****espo@unheva***l.pe
+contraseña :NOOA9**877**HV
+
+Generado
+PokemonCluster
+User Database--------------
+pokemondb_user
+iumq1rDYLqwA1xBw
+
+---Conectar por compass
+mongodb+srv://pokemondb_user:<password>@pokemoncluster.utpddat.mongodb.net/test
+Para conectar :<borrar ****>
+mongodb+srv://pokemondb****_user:iumq1rDYLqwA***1xBw@pokemonclus***ter.utpddat.mongodb.net/test
+ejecutar para build y subir  a aplicacion 
+    "start:prod": "nest start ",=>     "start": "node dist/main",
+```
+yarn start:prod
+```
