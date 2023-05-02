@@ -179,3 +179,4 @@ ejecutar para build y subir  a aplicacion
 ```
 yarn start:prod
 ```
+pokedex-alv
